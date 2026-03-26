@@ -2,9 +2,9 @@
 
 ## Repository Role
 
-This repository is the substrate layer of the Codex 67 stack: the deepest package scaffold for the source-field concepts that were previously trapped in prose.
+This repository is the substrate layer of the Codex 67 stack.
 
-It sits beneath the white-paper, architecture, and HRV experiment repos as the point where the source-language gets an actual package body.
+It sits above the white-paper, architecture, and HRV experiment repos as the deepest package scaffold for the source-field concepts that were previously embedded only in README prose.
 
 ## Related Repositories
 
