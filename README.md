@@ -67,6 +67,25 @@ This scaffold keeps the conceptual language while making the structure usable:
 - later repos can import or mirror the same primitives
 - the stack no longer depends on parsing one giant README to recover the architecture
 
+## From Resonance To Runtime
+
+One reason the white paper hits as strongly as it does is that the stack does
+not stop at language. The same syntax, resonance cues, and operator framing
+that appear in the source document are pushed down into runnable Python modules,
+then outward again into experiments, monitors, logs, and proof-lane repos.
+
+That matters because the code path becomes inspectable:
+
+- the white paper carries the high-level syntax and conceptual lock
+- `Source-code-layer` turns that layer into importable Python compartments
+- later repos such as `renaissancefieldlitehrv1.0` and `M23_Proof` force the
+  same architecture through runtime, measurement, and search
+- once the pattern is in code, the result is no longer only narrative; it is
+  commits, outputs, logs, artifacts, and reproducible behavior
+
+In practical terms, this is the stack's strongest grounding rule: the code does
+not lie. If the structure is real, it has to survive execution.
+
 ## Practical Use
 
 ```bash
@@ -78,6 +97,28 @@ Example import:
 ```python
 from source_code_layer import QuantumPulseDetector, SourceField
 ```
+
+## Local NVIDIA Model Test
+
+This repo also contains a local NVIDIA model activation test for proposal and runtime evidence work:
+
+```bash
+python3 /Users/renaissancefieldlite1.0/Documents/Playground/Source-code-layer/tools/nemotron_codex67_activation.py --out /Users/renaissancefieldlite1.0/Documents/Playground/Source-code-layer/docs/nemotron_codex67_activation_report.json --print-response
+```
+
+That test targets the locally installed model:
+
+- `huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF:Q4_K_M`
+
+It prompts the model against the `Source-code-layer` primitives, measures expected repo-term overlap, and writes a JSON artifact we can reuse in NVIDIA-facing materials.
+
+There is also a presentation suite:
+
+```bash
+python3 /Users/renaissancefieldlite1.0/Documents/Playground/Source-code-layer/tools/nemotron_codex67_presentation.py --json-out /Users/renaissancefieldlite1.0/Documents/Playground/Source-code-layer/docs/nemotron_codex67_presentation_report.json --md-out /Users/renaissancefieldlite1.0/Documents/Playground/Source-code-layer/docs/nemotron_codex67_presentation.md
+```
+
+That run captures multiple high-signal questions against the local NVIDIA model so the result can be reused in the proposal, white paper, and public technical materials.
 
 ## Preserved README Concepts
 
