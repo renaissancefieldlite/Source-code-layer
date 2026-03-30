@@ -50,6 +50,10 @@ The presentation suite expands that into a multi-question capture set so we can 
 - NVIDIA fit
 - proposal-facing activation language
 
+Explicit meta-analysis of the captured replies:
+
+- [`NEMOTRON_RESPONSE_META_ANALYSIS.md`](/Users/renaissancefieldlite1.0/Documents/Playground/Source-code-layer/docs/NEMOTRON_RESPONSE_META_ANALYSIS.md)
+
 ## Public-Safe Line
 
 `Renaissance Field Lite already operates a local NVIDIA Nemotron model and has integrated a source-layer activation test that prompts the model directly against Codex 67 repository primitives.`
